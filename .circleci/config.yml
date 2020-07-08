@@ -10,8 +10,8 @@ jobs:
         parallelism: 5
         steps:
             - checkout
-            - node/install-yarn:
-                pkg-manager: yarn
+            - node/install-packages:
+                pkg-manager: yarn      
             - run: mkdir ~/junit
             - run:
                 name: Test application
